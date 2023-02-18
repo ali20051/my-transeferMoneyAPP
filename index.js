@@ -2,6 +2,7 @@ const express    = require("express");
 const path       = require("path");
 const bodyParser = require("body-parser");
 const app        = express();
+const PORT = process.env.PORT || 3030;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -76,4 +77,6 @@ app.post('/send', (req , res) => {
 
 
 
-app.listen(3000);
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+});
