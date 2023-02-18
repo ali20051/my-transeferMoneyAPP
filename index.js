@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 const userData = {
   user: "Ali El",
   displayName: "Ali",
-  amount: 500,
+  amount: 5000000,
   history: [
     {
       where: "Wallmart",
