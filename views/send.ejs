@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./layouts/head'); -%>
+
+    <body>
+        <div class="overlays"></div>
+        <div class="form-container">
+            <div class="conatiner">
+                <h2 class="title">Login Page</h2>
+                <form action="/send" method="post">
+                    <!-- Grid -->
+                    <div class="grid">
+                        <!-- Markup example 1: input is inside label -->
+                        <label for="phonenumber">
+                            Your Phone Number
+                            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number" required>
+                        </label>
+                        <label for="amount">
+                            amount
+                            <input type="number" id="" name="amount" placeholder="amount" required>
+                        </label>
+                    </div>
+                    <fieldset>
+                        <label for="terms">
+                            <input type="checkbox" id="terms" name="terms">
+                            I agree to the <a href="#">Terms</a> and <a href="#">Condition</a>
+                        </label>
+                    </fieldset>
+                    <!-- Button -->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

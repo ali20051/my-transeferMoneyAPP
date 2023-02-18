@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./layouts/head'); -%>
+<body>
+    <div class="overlays"></div>
+    <div class="form-container">
+      <div class="conatiner">
+         <h2 class="title">Login Page</h2>
+            <form action="/login" method="post">
+              <!-- Grid -->
+              <div class="grid">
+                <!-- Markup example 1: input is inside label -->
+                <label for="email">
+                  e-mail
+                  <input type="email" id="email" name="email" placeholder="email" required>
+                </label>
+                <label for="password">
+                  Password
+                  <input type="password" id="password" name="password" placeholder="Password" required>
+                </label>
+              </div>
+              <fieldset>
+                <label for="terms">
+                  <input type="checkbox" id="terms" name="terms">
+                  I agree to the <a href="#">Terms</a> and <a href="#">Condition</a>
+                </label>
+              </fieldset>
+              <!-- Button -->
+              <button type="submit">Submit</button>
+            </form>
+       </div>        
+    </div>
+    <!-- the  of the page -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col"></div>
+          <h4>e-MinStore</h4>
+          <ul>
+            <li><a href="" class="btt">hello</a></li>
+            <li><a href="" class="btt">hello</a></li>
+            <li><a href="" class="btt">hello</a></li>
+            <li><a href="" class="btt">hello</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="footer-col"></div>
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="" class="btt">Good S</a></li>
+            <li><a href="" class="btt">Good S</a></li>
+            <li><a href="" class="btt">Good S</a></li>
+            <li><a href="" class="btt">Good S</a></li>
+            <li><a href="" class="btt">Good S</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="footer-col"></div>
+          <h4>Online Shopping</h4>
+          <ul>
+            <li><a href="" class="btt">Well</a></li>
+            <li><a href="" class="btt">Well</a></li>
+            <li><a href="" class="btt">Well</a></li>
+            <li><a href="" class="btt">Well</a></li>
+            <li><a href="" class="btt">Well</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="footer-col"></div>
+          <h4>Follow US</h4>
+          <div class="social-links">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

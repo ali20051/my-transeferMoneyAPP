@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+}
+
+.info-short{
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    padding: 5px 15px;    
+    background-image: url('/public/assets/images/info.jpg');
+    background-position: center;
+}
+.text{
+    color: #ffffff;
+}
+.title {
+    position: relative;
+    margin: 10px 0;
+}
+
+/* Balance Shorten */
+.balance-container{
+    position: relative;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.35);
+}
+.balance-short {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.transaction-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.transaction-btt{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+/* the Small History */
+.small-history {
+    height: auto;
+    position: relative;
+    top: 20px;
+    display: grid;
+    place-items: center;
+}
+.icon-container{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    gap: 10px;
+}
+.color-1{
+    color: red;
+}
+ul li{
+    list-style: none;
+    gap: 5px;
+    margin: 15px 0;
+}
+ul{
+    padding: 5px 15px;
+}
+.style{
+    display: flex;
+    justify-content: space-between;
+}
+.the-line{
+    position: relative;
+    height: 2.5px;
+    background-color: #ddd;
+}

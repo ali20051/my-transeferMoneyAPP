@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./layouts/dashhead'); -%>
+<body>
+    <!-- the balance info -->
+    <div class="info-short">
+        <h3 class="title text">Welcome Back <%= username %></h3>
+        <div class="balance-container">
+            <strong>Balance</strong>
+            <div class="balance-short">
+                <h2 class="balance-value title"><%= amount %><sup>DH</sup></h2>
+                <div class="transaction-container">
+                    <a href="/send" class="transaction-btt title"><i class="fas fa-arrow-up"></i></a>
+                    <a href="/deposit" class="transaction-btt title"><i class="fas fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- the small history preview --> 
+    <div class="small-history">
+        <ul>
+            <% historys.forEach(history => { %>
+                <li class="style">
+                    <div class="history-info">
+                        <h5 class="title"><%= history.where %></h5>
+                        <small>Tr: <%= history.transactionNumber %></small>
+                    </div>
+                    <div class="icon-container"><i class="fas fa-receipt color-1"></i></div>
+                </li>
+            <%})%>
+        </ul>
+    </div>
+</body>
+</html>
